@@ -1,0 +1,41 @@
+# + Fetch
+macchina
+# ^ Fetch
+
+source /usr/share/doc/mcfly/mcfly.zsh
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# + fix man
+export MANPAGER=less
+# ^ fix man
+
+# + Aliases
+alias eza="eza --icons -s=type"
+alias ezaa="eza --icons -s=type -ag"
+alias ezal="eza --icons -s=type -l"
+alias ezaal="eza --icons -s=type -alg"
+
+alias yeet="paru -Rcs"
+
+alias discordReplaceAsar="sudo cp /home/oliver/.app.asar /opt/discord/resources/app.asar"
+
+alias dart="/home/oliver/Documents/git/flutter/bin/dart" 
+
+alias steamconsole="steam steam://open/console"
+
+alias openvault="sudo cryptsetup open \--type luks fossvaultfile.img fosslinuxvault && sudo mount /dev/mapper/fosslinuxvault /vault"
+alias closevault="sudo umount /vault && sudo cryptsetup close fosslinuxvault"
+
+alias hx="helix"
+
+alias zj="zellij"
+# ^ Aliases
+
+# + Exports
+export QT_QPA_PLATFORMTHEME=gtk2
+export PATH="$PATH:/home/oliver/Documents/git/flutter/bin"
+export CHROME_EXECUTABLE="/usr/bin/chromium"
+export PATH="$PATH:/home/oliver/bin"
+
+# ^ Exports
